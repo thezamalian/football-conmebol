@@ -1,18 +1,69 @@
 /* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* common styles or utilites*/
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;;
-
+    margin: 0;
 }
 main {
     /* display: flex;
     flex-direction: row; */
 }
 
-
+/*--------------------------------------------------
+             Top container is styled 
+---------------------------------------------------*/
+.top-container {
+    /* width: 90%; */
+    height: 577px;
+    background: #2D25A0;
+    margin: 0;
+}
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 1040px; */
+    height: 456px;
+    padding: 5% 10%;
+}
+.top-container .home-info {
+    margin-right: 70px;
+    /* width: 400px; */
+}
+.top-container .home-info .page-header{
+    color: #FFFFFF;
+    /* font-weight: 700; */
+    font-size: 40px;
+    /* padding: 0; */
+}
+.top-container .home-info .watch-button {
+    width: 123px;
+    height: 25px;
+    color: #FFFFFF;
+    margin: 0px 0px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background: #E02C6D;
+}
+.top-container .home-info .watch-button span {
+    margin-right: 10px;
+}
+.top-container .home-info .watch-button a {
+    text-decoration: none;
+}
+.top-container .home-info .watch-button a:visited {
+    color: #FFFFFF;
+}
+.top-container .top-banner img {
+    width: 500px;
+    height: 400px;
+}
 /*--------------------------------
     Players' layout is styled 
 ---------------------------------*/
@@ -20,6 +71,7 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin-top: 70px;
       /* position: absolute;
       left: 165px; */
 }
@@ -31,6 +83,8 @@ main {
     /* top: 1248px;   */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
 }
 .player {
     /* width: 260px; */
@@ -38,10 +92,10 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .player .player-photo img {
-    width: 240px;
+    width: 250px;
     height: 186px;
 }
 .player .player-details {
@@ -49,12 +103,13 @@ main {
 }
 .player .player-details .player-name {
     font-weight: bold;
-    /* font-size: 28px; */
+    font-size: 28px;
     /* line-height: 40px; */
 }
 .player .player-details .player-info{
     color: #6C6C6C;
     margin: 10px 0px;
+    text-align: justify;
 }
 /*---------------------------------------
     highlight container layout styled 
@@ -77,6 +132,10 @@ main {
     width: 466px;
     height: 329px;
     align-items: center;
+    padding-right: 5%;
+}
+.highlight-container .highlight-title {
+    font-size: 44px;
 }
 .highlight-container .highlight-info {
     color: #6C6C6C;
@@ -85,25 +144,24 @@ main {
     width: 123px;
     height: 25px;
     color: #FFFFFF;
-    
     margin: 24px 0px;
     padding: 10px 25px;
-    text-decoration: none;
     background: #E02C6D;
 }
 .highlight-container .highlight-button span {
     margin-right: 10px;
-    text-decoration: none;
-}
-.highlight-container .highlight-thumbnail img {
-    width: 567px;
-    height: 407px;
 }
 .highlight-container .highlight-button a {
     text-decoration: none;
 }
 .highlight-container .highlight-button a:visited {
     color: #FFFFFF;
+}
+
+.highlight-container .highlight-thumbnail img {
+    width: 567px;
+    height: 407px;
+    padding-left: 5%;
 }
 /*-------------------------
     Footer is designed 
