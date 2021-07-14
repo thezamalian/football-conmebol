@@ -22,18 +22,15 @@ body {
     width: 100%;
     height: 577px;
     margin: 0;
-    /* padding: 5% 10%; */
 }
 .home-info {
     margin-left: 5%;
-    /* margin-right: 40px; */
     width: 480px;
 }
 .home-info .page-header{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 40px;
-    /* padding: 0; */
 }
 .home-info .watch-button {
     width: 123px;
@@ -56,8 +53,8 @@ body {
 .top-banner img {
     width: 500px;
     height: 400px;
-    margin-right: 110px;
-    /* padding-right: 5%; */
+    margin-left: 30px;
+    margin-right: 80px;
 }
 
 /*--------------------------------
@@ -72,11 +69,6 @@ body {
       left: 165px; */
 }
 .players {
-    /* position: absolute; */
-    /* width: 750px; */
-    /* height: 474px; */
-    /* left: 100px; */
-    /* top: 1248px;   */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
@@ -118,25 +110,20 @@ body {
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-    /* position: absolute;
-    width: 1050px;
-    height: 489px;
-    left: 132px;
-    top: 2048px; */
 }
-.highlight-container .highlight-details {
+.highlight-details {
     width: 466px;
     height: 329px;
     align-items: center;
     padding-right: 5%;
 }
-.highlight-container .highlight-title {
+.highlight-details .highlight-title {
     font-size: 44px;
 }
-.highlight-container .highlight-info {
+.highlight-details .highlight-info {
     color: #6C6C6C;
 }
-.highlight-container .highlight-button {
+.highlight-details .highlight-button {
     width: 123px;
     height: 25px;
     color: #FFFFFF;
@@ -144,17 +131,17 @@ body {
     padding: 10px 25px;
     background: #E02C6D;
 }
-.highlight-container .highlight-button span {
+.highlight-button span {
     margin-right: 10px;
 }
-.highlight-container .highlight-button a {
+.highlight-button a {
     text-decoration: none;
 }
-.highlight-container .highlight-button a:visited {
+.highlight-button a:visited {
     color: #FFFFFF;
 }
 
-.highlight-container .highlight-thumbnail img {
+.highlight-thumbnail img {
     width: 567px;
     height: 407px;
     padding-left: 5%;
@@ -181,34 +168,76 @@ body {
      Responsiveness created with Media query 
 -----------------------------------------------*/
 @media only screen and (max-width: 688px) {
-    .home-container {
-        height: 577px;
-    }
-    .home-container {
+    /* Top page is responsive now  */
+    .home-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
         width: 100%;
         height: 695px;
-        padding: 0;
-        margin: 0;
-        /* padding: 10% 10%; */
     }  
-    .home-container .home-info {
-        margin: 0px 10px;
+    .home-info {
+        margin: 0px 0px;
         width: 90%;
     }
-    .home-container .home-info .page-header{
+    .home-info .page-header{
         font-size: 24px;
-        /* line-height: 50px; */
         margin: 0px 46px 30px 10px;
         padding: 0;
-        /* padding: 0; */
         
     } 
-    .home-container .home-banner img {
+    .top-banner img {
         width: 329px;
         height: 259.17px;
+        margin: 50px 15px;
     }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-column-gap: 30px; */
+        grid-row-gap: 27px;
+    }
+    
+    /* Highlight is being responsive */
+    .highlight-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 0px;
+    }
+    .highlight-details {
+        width: 300px;
+        height: 299px;
+        margin: 35px 0;
+        margin-left: 30px;
+        text-align: justify;
+    }
+    .highlight-details .highlight-title {
+        font-size: 30px;
+        /* margin-left: 15px; */
+    }
+    .highlight-thumbnail {
+        /* text-align: center; */
+        justify-content: center;
+        margin-bottom: 43px;
+        margin-right: 15px;
+    }
+    .highlight-thumbnail img {
+        width: 308px;
+        height: 218px;
+        
+    }
+    .footer-ball {
+        width: 100%;
+        /* width: 170px; */
+        /* height: 32px; */
+    }
+    .logo-football img {
+        width: 240px;
+        height: 68px;  
+    }
+    
 }
