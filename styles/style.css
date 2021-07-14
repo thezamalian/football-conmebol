@@ -75,12 +75,11 @@ body {
     grid-row-gap: 27px;
 }
 .player {
-    /* width: 260px; */
-    /* height: 400px; */
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
-    /* margin: 10px; */
+    width: 300px;
+    height: 500px;
 }
 .player .player-photo img {
     width: 250px;
@@ -91,21 +90,20 @@ body {
 }
 .player .player-details .player-name {
     font-weight: bold;
-    font-size: 28px;
-    /* line-height: 40px; */
+    font-size: 24px;
 }
 .player .player-details .player-info{
     color: #6C6C6C;
     margin: 10px 0px;
     text-align: justify;
 }
+
 /*---------------------------------------
     highlight container layout styled 
 -----------------------------------------*/
 .highlight-container {
     display: flex;
     flex-direction: row;
-    /* align-items: flex-start; */
     padding: 0px;
     justify-content: center;
     align-items: center;
@@ -164,9 +162,9 @@ body {
     color: gray;
     margin: 0 14px;
 }
-/*--------------------------------------------
-     Responsiveness created with Media query 
------------------------------------------------*/
+/*----------------------------------------------------
+     Mobile Responsiveness created with Media query 
+------------------------------------------------------*/
 @media only screen and (max-width: 688px) {
     /* Top page is responsive now  */
     .home-container{
@@ -192,10 +190,10 @@ body {
         margin: 50px 15px;
     }
 
+    /* player section is responsive with 1 column  */
     .players {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* grid-column-gap: 30px; */
         grid-row-gap: 27px;
     }
     
@@ -217,10 +215,8 @@ body {
     }
     .highlight-details .highlight-title {
         font-size: 30px;
-        /* margin-left: 15px; */
     }
     .highlight-thumbnail {
-        /* text-align: center; */
         justify-content: center;
         margin-bottom: 43px;
         margin-right: 15px;
@@ -230,10 +226,10 @@ body {
         height: 218px;
         
     }
+
+    /* Mobile footer responsiveness */
     .footer-ball {
         width: 100%;
-        /* width: 170px; */
-        /* height: 32px; */
     }
     .logo-football img {
         width: 240px;
