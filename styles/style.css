@@ -106,7 +106,12 @@ body {
     margin: 10px 0px;
     text-align: justify;
 }
-
+/* jus 1 horizontal line  */
+hr {
+    color: rgb(211, 209, 209);
+    height: 10px;
+    background-color: rgb(201, 201, 201);
+}
 /*---------------------------------------
     highlight container layout styled 
 -----------------------------------------*/
@@ -125,7 +130,7 @@ body {
     padding-right: 5%;
 }
 .highlight-details .highlight-title {
-    font-size: 44px;
+    font-size: 34px;
 }
 .highlight-details .highlight-info {
     color: #6C6C6C;
